@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="https://cdn-icons-png.flaticon.com/512/4697/4697260.png">
+</head>
+
+<body>
+    <div class="todo-app">
+        <img src="https://cdn.dribbble.com/users/4241563/screenshots/11874468/media/7796309c77cf752615a3f9062e6a3b3d.gif"
+            class="todo-icon">
+        <h1>TO-DO LIST</h1>
+        <div class="container">
+            <div class="fields">
+                <form>
+                    <input type="text" id="task" placeholder="Add your task" autocomplete="off" autofocus>
+                    <button onclick="addTask()">ADD TASK</button>
+                </form>
+            </div>
+            <div class="my-tasks">
+                <ul class="task-list" type="none">
+                    <!-- <li class="checked">task1</li>
+                <li class="checked">task2</li>
+                <li class="checked">task3</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

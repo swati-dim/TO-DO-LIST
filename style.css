@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,#ed6532,#f7bcab,#ed6532);
+    display: flex;
+    justify-content: center;
+    font-family: cursive !important;
+}
+.todo-app{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 50px;
+    position: relative;
+}
+.todo-app h1{
+    color: red;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.todo-icon{
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    border-radius: 20px;
+}
+.container{
+    position: relative;
+    top: -20px;
+}
+.fields{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    background-color:antiquewhite;
+}
+.fields input{
+    width: 113%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color:antiquewhite;
+    padding: 20px;
+    font-size: 15px;
+}
+.fields button{
+    width: 25%;
+    height: 40px;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #ed6640;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.task-list{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+.task-list li{
+    padding: 10px 5px 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+.task-list li::before{
+    content: "";
+    background-image: url("https://www.freeiconspng.com/uploads/circle-icon-0.png");
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 12px;
+}
+.task-list li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/60/60778.png");
+}
